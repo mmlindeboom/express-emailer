@@ -11,6 +11,12 @@ This little Node app attaches a form to NodeMailer. It includes form validation 
 ---
 
 - Clone this repo
-	git clone git@github.com:mmlindeboom/express-emailer.git Your_Project_Directory
-- CD to your project directory, and run npm install
+```
+git clone git@github.com:mmlindeboom/express-emailer.git Your_Project_Directory
+``
+
+- CD to your project directory, and run 
+```node
+npm install
+```
 - To learn more about NodeMailer, [go here](http://blog.nodeknockout.com/post/34641712180/sending-email-from-node-js)
