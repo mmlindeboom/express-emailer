@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1=title
+  - function isEmptyObject(obj) {
+  -      var name;
+  -      for (name in obj) {
+  -        return false;
+  -      }
+  -      return true;
+  -    }
+  - if (isEmptyObject(errors) == false)
+    p.errorMessage= "The following errors occurred:"
+    ul  
+      - each error in errors
+        li= error.msg
+  form(method="post")
+      label(for="toemail") Email address you'd like email sent to.
+      input(type="text", name="toemail", id="toemail")
+      p.seperator
+      label(for="user.name") Name 
+      input(type="text", name="user[name]", id="user[name]", value="#{saved.name}") 
+
+      label(for="user.email") Email 
+      input(type="text", name="user[email]", id="user[email]", value="#{saved.email}")
+
+      label(for="userneeds") Needs
+      textarea(name="user[needs]", id="user[needs]",  rows="10")
+        =saved.needs
+      input(type="submit", value="Submit")

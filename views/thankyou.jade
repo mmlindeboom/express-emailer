@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  div
+    h2 Your email:
+    p
+      strong Name: 
+      =saved.name
+    p 
+      strong Email: 
+      =saved.email
+    p
+      needs Needs: 
+      =saved.needs
+  a(href='/') Go back to home

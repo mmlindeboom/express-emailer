@@ -1,0 +1,39 @@
+/* line 1, ../../sass/style.scss */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* line 6, ../../sass/style.scss */
+a {
+  color: #00B7FF;
+}
+
+/* line 9, ../../sass/style.scss */
+input[type="text"] {
+  height: 25px;
+}
+
+/* line 12, ../../sass/style.scss */
+input[type="text"], textarea {
+  width: 300px;
+}
+
+/* line 15, ../../sass/style.scss */
+input[type="submit"] {
+  display: block;
+}
+
+/* line 19, ../../sass/style.scss */
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+/* line 24, ../../sass/style.scss */
+.seperator {
+  width: 305px;
+  height: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #999;
+}
